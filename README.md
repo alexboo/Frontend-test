@@ -6,62 +6,61 @@
 
 ### Получение всех роботов
 
-Url: http://frontend.test.pleaple.com/api/robots
-Method: GET
+1. Url: http://frontend.test.pleaple.com/api/robots
+2. Method: GET
 
 Пример запроса:
 curl -i -X GET http://frontend.test.pleaple.com/api/robots
 
 ### Поиск робота
-Url: http://frontend.test.pleaple.com/api/robots/search/:name
-Method: GET
-Data: {name: "Название робота"}
+1. Url: http://frontend.test.pleaple.com/api/robots/search/:name
+2. Method: GET
+3. Data: {name: "Название робота"}
 
 Пример
 curl -i -X GET http://frontend.test.pleaple.com/api/robots/search/Astro
 
 ### Получение робота по ID
-Url: http://frontend.test.pleaple.com/api/robots/:id
-Method: GET
-Data: {id: "ID робота"}
+1. Url: http://frontend.test.pleaple.com/api/robots/:id
+2. Method: GET
+3. Data: {id: "ID робота"}
 
 Пример
 curl -i -X GET http://frontend.test.pleaple.com/api/robots/3
 
 ### Добавление робота
-Url: http://frontend.test.pleaple.com/api/robots
-Method: POST
-Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
+1. Url: http://frontend.test.pleaple.com/api/robots
+2. Method: POST
+3. Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
 
 Пример
 curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}' http://frontend.test.pleaple.com/api/robots
 
 ### Редактирование робота
-Url: http://frontend.test.pleaple.com/api/robots
-Method: PUT
-Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
+1. Url: http://frontend.test.pleaple.com/api/robots
+2. Method: PUT
+3. Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
 
 Пример
 curl -i -X PUT -d '{"name":"ASIMO","type":"humanoid","year":2000}' http://frontend.test.pleaple.com/api/robots/4
 
 ### Удаление робота
-Url: http://frontend.test.pleaple.com/api/robots/:id
-Method: DELETE
-Data: {id: "ID робота"}
+1. Url: http://frontend.test.pleaple.com/api/robots/:id
+2. Method: DELETE
+3. Data: {id: "ID робота"}
 
 Пример
 curl -i -X DELETE http://frontend.test.pleaple.com/api/robots/4
 
-Сам интерфейс нужно разработать на Backbone Marionette (http://marionettejs.com/) в оформлении можно использовать bootstrap
+#### Сам интерфейс нужно разработать на Backbone Marionette (http://marionettejs.com/) в оформлении можно использовать bootstrap
 
 Результат работы должен оказаться в этом репозитории
 
 ## Советы
 1. Не забываем работать с репозиторием. Для git является хорошей практикой делать много коммитов(commit) и меньше пушей (push)
-2. Не забываем коммэентировать код. Не нужно фанатизма, достаточно описание функций и сложных участков кода внутри функций.
-3. Стараемся использовать MVC модель для интерфейса, в javascript это не просто но возможно.
-4. Не тратьте время на дизайн, нужна только чистая верстка и код
-5. Если вам кажется что потратили уже много времени, вполне можете выложить то что уже есть. Возможно этого будет достаточно.
+2. Не забываем комментировать код. Не нужно фанатизма, достаточно описание функций и сложных участков кода внутри функций.
+3. Не тратьте время на дизайн, нужна только чистая верстка и код
+4. Если вам кажется что потратили уже много времени, вполне можете выложить то что уже есть. Возможно этого будет достаточно.
 
 ## Полезные материалы
 1. Документация на русском по backbone http://backbonejs.ru/
