@@ -70,8 +70,6 @@ curl -i -X DELETE http://frontend.test.pleaple.com/api/robots/4
 3. Хороший пример архитектуры https://github.com/an2323/listcontacts/tree/64cea59785e7f3464c1d651d2547970e65e3bad2
 4. Дополнитеоьный материал http://shustov.su/blog/javascript/backbone-marionette
 
-Если будут вопросы пишите. По возможности помогу.
-
 ## Для Android разработчика
 
 #### В работе желательно использовать следующие технологии
