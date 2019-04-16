@@ -45,13 +45,11 @@ curl -i -X PUT -d '{"name":"C-3PO","type":"droid","year":1977}' http://help.flip
 curl -i -X DELETE http://help.flip.kz/robots/api/robots/7
 
 #### В работе желательно использовать следующие технологии
-1. MVP
-2. JSON
-3. Jackson mapper
-4. http://loopj.com/android-async-http/
-5. Activity
-6. Fragment
-7. Material Design
+1. архитектуру MVP или MVVM
+2. OkHTTP
+3. JSON
+4. Fragment
+5. Material Design
 
 ## Советы
 1. Один экран с выводом и редактированием сущности
