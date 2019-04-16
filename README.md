@@ -1,4 +1,4 @@
-# Тестовое задание для соискателя на должность Frontend | Android разработчика
+# Тестовое задание для соискателя на должность  Android разработчика
 
 Нужно сделать CRUD интерфейс для базы данных роботов.
 
@@ -6,69 +6,43 @@
 
 ### Получение всех роботов
 
-1. Url: http://frontend.test.pleaple.com/api/robots
+1. Url: http://help.flip.kz/robots/api/robots
 2. Method: GET
 
 Пример запроса:
-curl -i -X GET http://frontend.test.pleaple.com/api/robots
-
-### Поиск робота
-1. Url: http://frontend.test.pleaple.com/api/robots/search/:name
-2. Method: GET
-3. Data: {name: "Название робота"}
-
-Пример
-curl -i -X GET http://frontend.test.pleaple.com/api/robots/search/Astro
+curl -i -X GET http://help.flip.kz/robots/api/robots
 
 ### Получение робота по ID
-1. Url: http://frontend.test.pleaple.com/api/robots/:id
+1. Url: http://help.flip.kz/robots/api/robots/:id
 2. Method: GET
 3. Data: {id: "ID робота"}
 
 Пример
-curl -i -X GET http://frontend.test.pleaple.com/api/robots/3
+curl -i -X GET http://help.flip.kz/robots/api/robots/1
 
 ### Добавление робота
-1. Url: http://frontend.test.pleaple.com/api/robots
+1. Url: http://help.flip.kz/robots/api/robots
 2. Method: POST
 3. Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
 
 Пример
-curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}' http://frontend.test.pleaple.com/api/robots
+curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1978}' http://help.flip.kz/robots/api/robots
 
 ### Редактирование робота
-1. Url: http://frontend.test.pleaple.com/api/robots
+1. Url: http://help.flip.kz/robots/api/robots/:id
 2. Method: PUT
 3. Data: {"name":"Название робота","type":"Тип робота","year":Год создания}
 
 Пример
-curl -i -X PUT -d '{"name":"ASIMO","type":"humanoid","year":2000}' http://frontend.test.pleaple.com/api/robots/4
+curl -i -X PUT -d '{"name":"C-3PO","type":"droid","year":1977}' http://help.flip.kz/robots/api/robots/1
 
 ### Удаление робота
-1. Url: http://frontend.test.pleaple.com/api/robots/:id
+1. Url: http://help.flip.kz/robots/api/robots/:id
 2. Method: DELETE
 3. Data: {id: "ID робота"}
 
 Пример
-curl -i -X DELETE http://frontend.test.pleaple.com/api/robots/4
-
-## Для Frontend разработчика
-
-#### Сам интерфейс нужно разработать на Backbone Marionette (http://marionettejs.com/) в оформлении можно использовать bootstrap
-
-Результат работы должен оказаться в GIT репозитории
-
-## Советы
-1. Не забываем работать с репозиторием. Для git является хорошей практикой делать много коммитов(commit) и меньше пушей (push)
-2. Не забываем комментировать код. Не нужно фанатизма, достаточно описание функций и сложных участков кода внутри функций.
-3. Не тратьте время на дизайн, нужна только чистая верстка и код
-4. Если вам кажется что потратили уже много времени, вполне можете выложить то что уже есть. Возможно этого будет достаточно.
-
-## Полезные материалы
-1. Документация на русском по backbone http://backbonejs.ru/
-2. Документация на русском по marionette http://instanceof.pro/marionettejs.ru/
-3. Хороший пример архитектуры https://github.com/an2323/listcontacts/tree/64cea59785e7f3464c1d651d2547970e65e3bad2
-4. Дополнитеоьный материал http://shustov.su/blog/javascript/backbone-marionette
+curl -i -X DELETE http://help.flip.kz/robots/api/robots/7
 
 ## Для Android разработчика
 
