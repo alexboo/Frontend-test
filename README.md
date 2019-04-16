@@ -44,8 +44,6 @@ curl -i -X PUT -d '{"name":"C-3PO","type":"droid","year":1977}' http://help.flip
 Пример
 curl -i -X DELETE http://help.flip.kz/robots/api/robots/7
 
-## Для Android разработчика
-
 #### В работе желательно использовать следующие технологии
 1. MVP
 2. JSON
